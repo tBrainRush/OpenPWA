@@ -21,7 +21,7 @@ OpenPWA is a project designed to create small web apps for iOS by leveraging iOS
    - The web app will be added to your home screen and can be launched like any other app.
 
 3. **Host Your Web App (Optional)**:
-   - If you need a stateful web app, you can host it on GitHub Pages, Netlify, or any other hosting service.
+   - If you need a stateful web app, you can host it on GitHub Pages, Altervista, or any other hosting service.
    - Stateless web apps can be created and installed without hosting, but they will not retain state between sessions.
 
 ## Contributing
