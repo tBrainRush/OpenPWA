@@ -2,7 +2,7 @@
 
 OpenPWA is a project designed to create small web apps for iOS by leveraging iOS configuration profiles. This project is currently in development, and while it is possible to create stateless web apps without hosting, the only way to have a stateful web app at the moment is to host it somewhere.
 
-[Install OpenPWA as configuration profile]()
+[Install OpenPWA as configuration profile](profile/OpenPWA.mobileconfig)
 
 ## Features
 
