@@ -457,10 +457,7 @@
             <button onclick="installApp()" class="install-button" title="Installa">
                 <span class="material-icons">get_app</span>
             </button>
-            <button onclick="openUrlModal()" class="install-button" title="PWA da URL">
-                <span class="material-icons">link</span>
-                <span data-translate="pwa_from_url">PWA da URL</span>
-            </button>
+
         </div>
     </header>
 
@@ -479,6 +476,10 @@
             <button onclick="visitDocumentation()">
                 <span class="material-icons">description</span>
                 <span data-translate="documentation">Documentazione</span>
+            </button>
+            <button onclick="openUrlModal()" class="install-button" title="PWA da URL">
+                <span class="material-icons">link</span>
+                <span data-translate="pwa_from_url">PWA da URL</span>
             </button>
             <div class="language-selector">
                 <label for="language-select" data-translate="language">Lingua:</label>
@@ -1106,15 +1107,9 @@
             const a = document.createElement('a');
             a.href = url;
             a.download = 'code.html';
-    
-            document.body.appendChild(a);
-            a.style.display = 'block';
-    
             a.click();
-            document.body.removeChild(a);
             URL.revokeObjectURL(url);
         }
-
 
         function loadFile() {
             const input = document.createElement('input');
