@@ -1101,14 +1101,20 @@
 
         function saveFile() {
             const content = window.editor.getValue();
-            const blob = new Blob([content], { type: 'text/html' });
+            const file = new File([content], 'code.html', { type: 'text/html' });
+            const url = URL.createObjectURL(file);
             const a = document.createElement('a');
-            a.href = URL.createObjectURL(blob);
+            a.href = url;
             a.download = 'code.html';
+    
             document.body.appendChild(a);
+            a.style.display = 'block';
+    
             a.click();
-            document.body.removeChild(a); 
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         }
+
 
         function loadFile() {
             const input = document.createElement('input');
